@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+}
+
+.chat-area, .home {
+    margin-top: 60px;
+}
+
+.chat-area {
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.chat-area .chat-bubble {
+    background-color: #bbdefb;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.chat-bubble .chat-time {
+    font-size: 12px;
+    color: #757575;
+    text-align: right;
+}
+
+.chat-area .chat-bubble.current-user {
+    margin-left: auto;
+    background-color: #a5d6a7;
+}
+
+.form-control {
+    width: 60%;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+  
+.btn {
+    margin-top: 10px;
+}
+  
+.btn-submit {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.jumbotron, .navbar {
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #1fd1f9;
+    color: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+}
+
+.navbar .navbar-brand {
+    color: #1fd1f9;
+    color: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+}
+
+.navbar .navbar-brand:hover {
+    color: #9921e8;
+}
+
+.navbar .collapse .navbar-nav .nav-item {
+    color: #9921e8;
+    color: linear-gradient(315deg, #9921e8 0%, #5f72be 74%);
+}
+
+.title:hover {
+    text-decoration: none;
+    color: #9921e8;
+}
+
+@media screen and (max-width: 767px) {
+    .form-control {
+        width: 100%;
+    }
+  
+    .chat-area .chat-bubble {
+        max-width: 250px;
+    }
+}
